@@ -12,34 +12,34 @@
 <body>
     <header>
 <!------------ nav bar style start----------- -->
-    <nav class="">
-        <div class="navbar bg-red-400">
+    <nav class=" bg-red-400 rounded-full p-100  mx-6 my-4">
+        <div class="navbar text-white">
             <div class="flex-1">
-              <a class=" normal-case ">Home</a>
-              <a class="btn btn-ghost normal-case ">About Us</a>
-              <a class="btn btn-ghost normal-case ">Shop</a>
-              <a class="btn btn-ghost normal-case ">All Fruits</a>
+              <a class="pl-7 normal-case ">Home</a>
+              <a class="pl-3 normal-case ">About Us</a>
+              <a class="pl-3 normal-case ">Shop</a>
+              <a class="pl-3 normal-case ">All Fruits</a>
             </div>
             <div>
-                <div class="flex mr-28">
-                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="flex items-center mr-28">
+                    <label tabindex="0" class=" btn-circle avatar">
                       <div class="w-10 rounded-full">
                         <img src="./images/logo.png" />
                       </div>
                     </label>
                     <div>
-                        <a class="btn btn-ghost normal-case text-xl pr-2">Fruit Burst</a>
+                        <a class=" normal-case text-xl pr-5">Fruit Burst</a>
                     </div>
                   </div>
-              <div class="form-control">
-                <input type="text" placeholder="Search here" class="input input-bordered w-14 md:w-auto" />
-              </div>
- 
-            </div>
+                  <div class="form-control pr-7">
+                    <input type="text" placeholder="Search here" class="input input-bordered w-14 md:w-auto bg-white rounded-full" />
+                  </div>
+                  </div>
           </div>
     </nav>
-<!--------- Hero/banner section start---------- -->
-<section>
+     
+    <!--------- Hero/banner section start---------- -->
+<!-- <section>
     <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
@@ -50,7 +50,42 @@
           </div>
         </div>
       </div>
-</section>
+</section> -->
+
+
+<div class="relative">
+  <!-- Left Sidebar -->
+  <div class="absolute top-0 left-0 h-full w-240 bg-red-400">
+    <!-- Logo for the left sidebar -->
+    <div class="flex justify-center items-center h-16">
+      <!-- Your left sidebar logo image goes here -->
+    </div>
+  </div>
+
+  <!-- Right Sidebar -->
+  <div class="absolute top-0 right-0 h-full w-240 bg-blue-400">
+    <!-- Logo for the right sidebar -->
+    <div class="flex justify-center items-center h-16">
+      <!-- Your right sidebar logo image goes here -->
+    </div>
+  </div>
+
+  <!-- Main Banner Image -->
+  <img src="./images/banner1.png" alt="Banner Image" class="w-full h-auto" />
+
+  <!-- Content and Button on Top -->
+  <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
+    <!-- Content below the banner -->
+    <h2 class="text-3xl font-bold text-white">Your H2 Heading</h2>
+    <p class="mt-4 text-lg text-white">Your content for the H2 tag goes here.</p>
+    <p class="mt-4 text-white">Your additional content goes here.</p>
+    <button class="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">
+      Shop Now
+    </button>
+  </div>
+</div>
+
+
     </header>
     <main>
 
